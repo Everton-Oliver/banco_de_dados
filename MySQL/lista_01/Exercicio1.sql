@@ -1,4 +1,13 @@
 
+create table colaboradores
+(id_pessoa integer PRIMARY KEY AUTO_INCREMENT,
+nome varchar(30),
+data_nascimento date,
+sexo enum ("M", "F", "A"),
+cargo varchar (30),
+salario decimal (7,2)
+)engine = innodb;
+;
 
 insert into colaboradores (nome,data_nascimento,sexo,cargo,salario)values (
 "Cassia Rosário", 
